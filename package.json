@@ -11,7 +11,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/vercel": "^11.0.13",
+    "@astrojs/vercel": "11.0.12",
     "@tinacms/astro": "^0.7.1",
     "astro": "^7.3.8",
     "react": "^19.3.0",
