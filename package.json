@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
-    "build": "node scripts/build.mjs",
+    "build": "node --env-file-if-exists=.env scripts/build.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
