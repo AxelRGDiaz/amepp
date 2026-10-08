@@ -1,12 +1,11 @@
 {
   "title": "Inicio",
-  "description": "Asociación Mexicana de Psicólogos y Psicólogas, A.C. Por el desarrollo integral del ser humano y la trascendencia social de la psicología.",
+  "description": "Asociación Mexicana de Psicólogos y Psicólogas, A.C. Por el desarrollo integral del ser humano y la trascendencia social de la psicología. ojala esto se vea ",
   "theme": "white",
   "blocks": [
     {
-      "_template": "hero",
-      "layout": "center",
       "image": "/uploads/hero-amepp.jpg",
+      "layout": "center",
       "kicker": "AMEPP",
       "title": "Asociación Mexicana de Psicólogos y Psicólogas, A.C.",
       "text": "\"Por el desarrollo integral del ser humano y la trascendencia social de la psicología\"",
@@ -16,17 +15,17 @@
           "href": "/afiliate/",
           "style": "primary"
         }
-      ]
+      ],
+      "_template": "hero"
     },
     {
-      "_template": "about",
       "image": "/uploads/logo-amepp.png",
       "title": "¿Quiénes somos?",
       "text": "Una organización de psicólogas y psicólogos, en la que participar las y los estudiantes de psicología, y que se caracteriza por ser: democrática, incluyente, científica, creativa e innovadora, eficiente, eficaz, crítica, propositiva, solidaria, promotora y defensora de los derechos humanos, representativa nacionalmente y con una amplia red de relaciones estratégicas.",
-      "showSocial": false
+      "showSocial": false,
+      "_template": "about"
     },
     {
-      "_template": "benefits",
       "title": "Beneficios de Afiliación a la AMEPP",
       "items": [
         {
@@ -97,18 +96,18 @@
           "strong": "Acceder a la información del Observatorio Nacional de Psicología y Sociedad",
           "text": "para apoyar tu trabajo académico y/o profesional."
         }
-      ]
+      ],
+      "_template": "benefits"
     },
     {
-      "_template": "quote",
-      "imageSide": "right",
-      "image": "/uploads/gandhi.jpg",
-      "author": "- Mahatma Gandhi-",
       "text": "\"“Dicen que soy un héroe, yo, pequeño, débil, tímido, casi cobarde; si a pesar de ser lo que soy, pude hacer lo que hice, que no podrían hacer ustedes juntos”\"",
-      "tone": "coral"
+      "author": "- Mahatma Gandhi-",
+      "image": "/uploads/gandhi.jpg",
+      "tone": "coral",
+      "imageSide": "right",
+      "_template": "quote"
     },
     {
-      "_template": "programs",
       "title": "PROGRAMAS NACIONALES",
       "items": [
         {
@@ -129,19 +128,20 @@
           "text": "Profesional en Psicología",
           "href": ""
         }
-      ]
+      ],
+      "_template": "programs"
     },
     {
-      "_template": "quote",
-      "imageSide": "left",
-      "image": "/uploads/ignacio-martin-baro.webp",
-      "author": "- Psic. Ignacio Martín-Baro",
       "text": "\"“Por ello, yo les invito a todos ustedes, en palabras de García Márquez, a optar por una nueva y arrasadora utopía de la vida, donde nadie pueda decidir por otros hasta la forma de morir, donde deveras sea cierto el amor y sea posible la felicidad y donde las estirpes condenadas a cien años de soledad tengan por fin y para siempre una segunda oportunidad sobre la tierra”\"",
-      "tone": "red"
+      "author": "- Psic. Ignacio Martín-Baro",
+      "image": "/uploads/ignacio-martin-baro.webp",
+      "tone": "red",
+      "imageSide": "left",
+      "_template": "quote"
     },
     {
-      "_template": "contact",
-      "background": "white"
+      "background": "white",
+      "_template": "contact"
     }
   ]
 }
