@@ -1,6 +1,6 @@
 {
   "title": "Inicio",
-  "description": "Asociación Mexicana de Psicólogos y Psicólogas, A.C. Por el desarrollo integral del ser humano y la trascendencia social de la psicología. ojala esto se vea ",
+  "description": "Asociación Mexicana de Psicólogos y Psicólogas, A.C. Por el desarrollo integral del ser humano y la trascendencia social de la psicología.",
   "theme": "white",
   "blocks": [
     {
@@ -8,7 +8,7 @@
       "layout": "center",
       "kicker": "AMEPP",
       "title": "Asociación Mexicana de Psicólogos y Psicólogas, A.C.",
-      "text": "\"Por el desarrollo integral del ser humano y la trascendencia social de la psicología\"",
+      "text": "\"Por el desarrollo integral del ser humano y la trascendencia social de la psicología\" prueba",
       "buttons": [
         {
           "label": "Afiliate",
