@@ -1,0 +1,9 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { Global } from "../lib/content";
+
+interface Props { global: Global }
+const { global } = Astro.props;
+const text = (global.footer ?? "").replace("{year}", String(new Date().getFullYear()));
+---
+<div class="footer-inner" data-tina-field={tinaField(global, "footer")}>{text}</div>

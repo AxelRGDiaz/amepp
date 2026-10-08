@@ -1,0 +1,32 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksHero } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksHero }
+const { block } = Astro.props;
+const layout = block.layout ?? "center";
+---
+<section
+  class={`hero hero--${layout}`}
+  style={block.image ? `background-image: url('${block.image}')` : undefined}
+  data-tina-field={tinaField(block, "image")}
+>
+  <div class="container hero__inner">
+    <div class="hero__head">
+      {block.kicker && <p class="hero__kicker" data-tina-field={tinaField(block, "kicker")}>{block.kicker}</p>}
+      {block.title && <h1 class="hero__title" data-tina-field={tinaField(block, "title")}>{block.title}</h1>}
+    </div>
+    <div class="hero__body">
+      {block.text && <p class="hero__text" data-tina-field={tinaField(block, "text")}>{block.text}</p>}
+      {block.buttons && block.buttons.length > 0 && (
+        <div class="hero__buttons">
+          {block.buttons.map((button) => button && (
+            <a class={`btn btn--${button.style ?? "primary"}`} href={button.href ?? "#"} data-tina-field={tinaField(button, "label")}>
+              {button.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>

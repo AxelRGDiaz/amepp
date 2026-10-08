@@ -1,38 +1,35 @@
-# AMEPP — sitio estático
+# AMEPP — sitio web
 
-Copia de https://amepp.org convertida de WordPress/Elementor a HTML estático
-(sin PHP ni base de datos).
+Sitio de la Asociación Mexicana de Psicólogos y Psicólogas, A.C., hecho con
+[Astro](https://astro.build) y editable visualmente con [TinaCMS](https://tina.io).
 
-## Ver en local
+## Trabajar en local
 
 ```bash
-cd ~/Desktop/Personal/kuri
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Abrir http://localhost:8000
+- Sitio: http://localhost:4321
+- Editor visual: http://localhost:4321/admin (guarda directamente en los archivos de `content/`)
 
-> Hay que usar un servidor (no abrir el `index.html` con doble clic), porque
-> las rutas empiezan en `/` y Elementor carga módulos JS bajo demanda.
+## Dónde está cada cosa
 
-## Estructura
+| Carpeta | Contenido |
+|---|---|
+| `content/pages/` | Una página por archivo (`inicio.json` es la portada) |
+| `content/boletines/` | Boletines de Publicaciones (uno por archivo) |
+| `content/global/` | Logo, menú, contacto, redes y pie de página |
+| `public/uploads/` | Imágenes (las que subas desde el editor quedan aquí) |
+| `src/components/blocks/` | Diseño de cada tipo de sección |
+| `src/styles/global.css` | Estilos |
+| `tina/config.ts` | Campos que se pueden editar en el panel |
 
-| Ruta                     | Página          |
-|--------------------------|-----------------|
-| `index.html`             | Inicio          |
-| `nosotros-somos/`        | Nosotros Somos  |
-| `publicaciones/`         | Publicaciones   |
-| `afiliate/`              | Afíliate        |
-| `afiliacion/`            | Afiliación      |
-| `wp-content/uploads/`    | Imágenes        |
-| `wp-content/`, `wp-includes/` | CSS/JS de Elementor y del tema (solo archivos estáticos) |
+## Publicar (Vercel)
 
-## Publicar
+Variables de entorno necesarias en Vercel para que el editor funcione en línea:
 
-Sube la carpeta tal cual a cualquier hosting estático: Netlify, Vercel,
-Cloudflare Pages, GitHub Pages o el mismo Apache actual.
+- `TINA_CLIENT_ID`: Client ID del proyecto en app.tina.io
+- `TINA_TOKEN`: token de solo lectura del proyecto en app.tina.io
 
-## Qué ya no funciona (necesitaba WordPress)
-
-- El buscador del menú (`?s=`), que dependía de la base de datos de WordPress.
-- Las estadísticas de Burst Statistics (se quitaron).
+Sin esas variables el sitio se publica igual, pero `/admin` no podrá guardar.

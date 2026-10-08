@@ -1,0 +1,30 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import Icon from "../Icon.astro";
+import type { PageBlocksBenefits } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksBenefits }
+const { block } = Astro.props;
+// Sin espacio cuando el texto normal empieza con puntuación (p. ej. ". Por sectores…").
+const joiner = (text?: string | null) => (text && !/^[.,;:]/.test(text) ? " " : "");
+const items = (block.items ?? []).filter(Boolean);
+const half = Math.ceil(items.length / 2);
+const columns = [items.slice(0, half), items.slice(half)];
+---
+<section class="benefits">
+  <div class="container">
+    {block.title && <h2 class="section-title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    <div class="benefits__grid">
+      {columns.map((column) => (
+        <ul class="icon-list icon-list--divided">
+          {column.map((item) => (
+            <li data-tina-field={tinaField(item!)}>
+              <Icon name="check" class="icon-list__icon benefits__icon" />
+              <span class="icon-list__text"><b>{item!.strong}</b>{joiner(item!.text)}{item!.text}</span>
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+  </div>
+</section>

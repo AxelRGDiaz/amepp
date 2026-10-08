@@ -1,0 +1,12 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksBanner } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksBanner }
+const { block } = Astro.props;
+---
+<section class="banner">
+  {block.line1 && <h2 class="banner__line1" data-tina-field={tinaField(block, "line1")}>{block.line1}</h2>}
+  {block.line2 && <h2 class="banner__line2" data-tina-field={tinaField(block, "line2")}>{block.line2}</h2>}
+  <div class="banner__divider"><span data-tina-field={tinaField(block, "dividerText")}>{block.dividerText}</span></div>
+</section>

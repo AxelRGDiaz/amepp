@@ -1,0 +1,32 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import Icon from "../Icon.astro";
+import type { PageBlocksPrograms } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksPrograms }
+const { block } = Astro.props;
+// Sin espacio cuando el texto normal empieza con puntuación (p. ej. ". Por sectores…").
+const joiner = (text?: string | null) => (text && !/^[.,;:]/.test(text) ? " " : "");
+---
+<section class="programs">
+  <div class="container container--narrow">
+    {block.title && <h2 class="section-title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    <ul class="icon-list icon-list--divided">
+      {block.items?.map((item) => item && (
+        <li data-tina-field={tinaField(item)}>
+          {item.href ? (
+            <a href={item.href} target="_blank" rel="noopener">
+              <Icon name={item.icon ?? "certificate"} class="icon-list__icon programs__icon" />
+              <span class="icon-list__text"><b>{item.strong}</b>{joiner(item.text)}{item.text}</span>
+            </a>
+          ) : (
+            <>
+              <Icon name={item.icon ?? "certificate"} class="icon-list__icon programs__icon" />
+              <span class="icon-list__text"><b>{item.strong}</b>{joiner(item.text)}{item.text}</span>
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

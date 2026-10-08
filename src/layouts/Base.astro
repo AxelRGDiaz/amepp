@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+import type { Global, Page } from "../lib/content";
+
+interface Props { page: Page; global: Global }
+const { page, global } = Astro.props;
+const title = page.title === "Inicio" ? `${global.siteName}` : `${page.title} – ${global.siteName}`;
+const fonts = [
+  "Ropa+Sans",
+  "PT+Sans:ital,wght@0,400;0,700;1,400",
+  "Roboto:wght@300;400;700",
+  "Roboto+Condensed:wght@600",
+  "Ubuntu:wght@300;700",
+  "Manrope:wght@700;800",
+  "Poppins:wght@300;500",
+  "Lato",
+  "Nunito+Sans:wght@400;900",
+  "Barlow:wght@400;600;700",
+].map((f) => `family=${f}`).join("&");
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {page.description && <meta name="description" content={page.description} />}
+    <link rel="icon" href={global.logo ?? "/favicon.ico"} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?${fonts}&display=swap`} />
+  </head>
+  <body class={`theme-${page.theme ?? "white"}`}>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <slot />
+    <script>
+      // Menú móvil
+      document.addEventListener("click", (event) => {
+        const toggle = (event.target as Element).closest("[data-menu-toggle]");
+        if (!toggle) return;
+        const header = toggle.closest(".site-header");
+        const open = header?.classList.toggle("menu-open") ?? false;
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+    </script>
+  </body>
+</html>

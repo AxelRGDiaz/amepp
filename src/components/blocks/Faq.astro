@@ -1,0 +1,20 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksFaq } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksFaq }
+const { block } = Astro.props;
+---
+<section class="faq">
+  <div class="container cards__frame">
+    {block.title && <h2 class="cards__title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    <div class="faq__list">
+      {block.items?.map((item) => item && (
+        <details class="faq__item" data-tina-field={tinaField(item)}>
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

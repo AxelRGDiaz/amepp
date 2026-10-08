@@ -1,0 +1,19 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksObjectives } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksObjectives }
+const { block } = Astro.props;
+---
+<section class="objectives">
+  <div class="container">
+    {block.title && <h2 class="display-title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    <div class="objectives__grid">
+      {block.items?.map((item) => item && (
+        <div class:list={["objectives__card", { "objectives__card--dark": item.dark }]} data-tina-field={tinaField(item)}>
+          <p>{item.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

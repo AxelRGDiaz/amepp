@@ -1,1 +1,8 @@
 .DS_Store
+node_modules/
+dist/
+.astro/
+.vercel/
+tina/__generated__/
+public/admin/
+.env

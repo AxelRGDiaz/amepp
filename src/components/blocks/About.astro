@@ -1,0 +1,33 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import Icon from "../Icon.astro";
+import type { Global } from "../../lib/content";
+import type { PageBlocksAbout } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksAbout; global: Global }
+const { block, global } = Astro.props;
+const social = (global.social ?? []).filter((s) => s?.network);
+---
+<section class="about">
+  <div class="container about__grid">
+    <div class="about__media">
+      {block.image && <img src={block.image} alt="" width="300" height="64" data-tina-field={tinaField(block, "image")} />}
+    </div>
+    <div class="about__content">
+      {block.title && <h2 class="section-title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+      <span class="about__divider"></span>
+      {block.text && <p class="about__text" data-tina-field={tinaField(block, "text")}>{block.text}</p>}
+      {block.showSocial && social.length > 0 && (
+        <ul class="social" data-tina-field={tinaField(global, "social")}>
+          {social.map((s) => (
+            <li>
+              {s!.url
+                ? <a href={s!.url} target="_blank" rel="noopener" aria-label={s!.network!}><Icon name={s!.network!} /></a>
+                : <span aria-label={s!.network!}><Icon name={s!.network!} /></span>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+</section>

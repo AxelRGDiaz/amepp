@@ -1,0 +1,45 @@
+{
+  "title": "Publicaciones",
+  "description": "Boletín electrónico mensual «La Profesión de las y los Psicólogos» de la AMEPP.",
+  "theme": "gray",
+  "blocks": [
+    {
+      "_template": "pubHero",
+      "title": "La forma más práctica y sencilla",
+      "subtitle": "de actualizarte y promocionarte",
+      "badge": "/uploads/boletin-encabezado.png",
+      "image": "/uploads/publicaciones-personas.png",
+      "backdrop": "/uploads/publicaciones-fondo.png"
+    },
+    {
+      "_template": "banner",
+      "line1": "LA PROFESIÓN DE LAS Y LOS PSICOLOGOS",
+      "line2": "www.amepp.org",
+      "dividerText": "Asociación Mexicana de Psicólogos y Psicólogas"
+    },
+    {
+      "_template": "bulletins",
+      "year": 2024,
+      "subtitle": "Boletín Electrónico",
+      "cover": "/uploads/boletin-2024.png",
+      "coverHref": "",
+      "coverSide": "right"
+    },
+    {
+      "_template": "bulletins",
+      "year": 2023,
+      "subtitle": "",
+      "cover": "/uploads/boletin-2023.png",
+      "coverHref": "https://drive.google.com/file/d/17VXFKG9_xOGtRqmAG_VUeRAGLaPuXlkt/view?usp=sharing",
+      "coverSide": "left"
+    },
+    {
+      "_template": "bulletins",
+      "year": 2022,
+      "subtitle": "Boletín Electrónico",
+      "cover": "/uploads/boletin-2022.png",
+      "coverHref": "",
+      "coverSide": "right"
+    }
+  ]
+}

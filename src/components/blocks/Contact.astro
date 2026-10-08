@@ -1,0 +1,31 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import Icon from "../Icon.astro";
+import type { Global } from "../../lib/content";
+import type { PageBlocksContact } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksContact; global: Global }
+const { block, global } = Astro.props;
+const c = global.contact;
+const map = c?.mapAddress
+  ? `https://maps.google.com/maps?q=${encodeURIComponent(c.mapAddress)}&t=m&z=12&output=embed&iwloc=near`
+  : null;
+---
+<section class={`contact contact--${block.background ?? "white"}`} data-tina-field={tinaField(block, "background")}>
+  <div class="container contact__grid">
+    <div class="contact__card" data-tina-field={tinaField(global, "contact")}>
+      <Icon name="phone" class="contact__phone" />
+      <h3 class="contact__title">{c?.title}</h3>
+      <ul class="icon-list icon-list--divided contact__list">
+        {c?.city && <li><Icon name="location" class="icon-list__icon" /><span class="icon-list__text">{c.city}</span></li>}
+        {c?.phone && <li><Icon name="phone" class="icon-list__icon" /><a class="icon-list__text" href={`tel:${c.phone.replace(/\s/g, "")}`}>{c.phone}</a></li>}
+        {c?.email && <li><Icon name="envelope" class="icon-list__icon" /><a class="icon-list__text" href={`mailto:${c.email}`}>{c.email}</a></li>}
+      </ul>
+    </div>
+    {map && (
+      <div class="contact__map">
+        <iframe src={map} title={c?.mapAddress ?? "Mapa"} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    )}
+  </div>
+</section>

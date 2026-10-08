@@ -1,0 +1,31 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksPeople } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksPeople }
+const { block } = Astro.props;
+const layout = block.layout ?? "list";
+const columns = layout === "columns"
+  ? [{ field: "people", list: block.people }, { field: "peopleRight", list: block.peopleRight }]
+  : [{ field: "people", list: block.people }];
+---
+<section class={`people people--${layout}`}>
+  <div class="container">
+    {block.divider && <hr class="people__divider" />}
+    <div class="people__inner">
+      {block.title && <h3 class="people__title" data-tina-field={tinaField(block, "title")}>{block.title}</h3>}
+      <div class="people__columns">
+        {columns.map(({ field, list }) => (
+          <ul class="people__list" data-tina-field={tinaField(block, field)}>
+            {list?.map((person) => person && (
+              <li data-tina-field={tinaField(person)}>
+                <strong>{person.name}</strong>
+                <span>{person.role}</span>
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

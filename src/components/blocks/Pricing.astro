@@ -1,0 +1,25 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksPricing } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksPricing }
+const { block } = Astro.props;
+---
+<section class="pricing">
+  <div class="container">
+    {block.title && <h2 class="display-title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    <div class="pricing__grid">
+      {block.plans?.map((plan) => plan && (
+        <div class:list={["pricing__card", { "pricing__card--dark": plan.dark }]}>
+          <h3 class="pricing__name" data-tina-field={tinaField(plan, "name")}>{plan.name}</h3>
+          <p class="pricing__price" data-tina-field={tinaField(plan, "price")}>{plan.price}</p>
+          {plan.subtitle && <p class="pricing__subtitle" data-tina-field={tinaField(plan, "subtitle")}>{plan.subtitle}</p>}
+          {plan.text && <p class="pricing__text" data-tina-field={tinaField(plan, "text")}>{plan.text}</p>}
+          {plan.button?.label && (
+            <a class="pricing__button" href={plan.button.href ?? "#"} data-tina-field={tinaField(plan, "button")}>{plan.button.label}</a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+import TinaIsland from "@tinacms/astro/TinaIsland.astro";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import PageBlocks from "../components/PageBlocks.astro";
+import { listPageSlugs, loadBulletins, loadGlobal, loadPage } from "../lib/content";
+
+export async function getStaticPaths() {
+  const slugs = await listPageSlugs();
+  return slugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const [page, global, bulletins] = await Promise.all([loadPage(slug), loadGlobal(), loadBulletins()]);
+const path = slug ? `/${slug}/` : "/";
+---
+<Base page={page} global={global}>
+  <TinaIsland name="header" params={{ path }} wrapper={{ tag: "header", className: "site-header" }}>
+    <Header global={global} path={path} />
+  </TinaIsland>
+  <TinaIsland name="page" params={{ slug: slug ?? "" }} primary wrapper={{ tag: "main", className: "site-main" }}>
+    <PageBlocks page={page} global={global} bulletins={bulletins} />
+  </TinaIsland>
+  <TinaIsland name="footer" wrapper={{ tag: "footer", className: "site-footer" }}>
+    <Footer global={global} />
+  </TinaIsland>
+</Base>

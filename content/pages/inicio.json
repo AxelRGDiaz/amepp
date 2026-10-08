@@ -1,0 +1,147 @@
+{
+  "title": "Inicio",
+  "description": "Asociación Mexicana de Psicólogos y Psicólogas, A.C. Por el desarrollo integral del ser humano y la trascendencia social de la psicología.",
+  "theme": "white",
+  "blocks": [
+    {
+      "_template": "hero",
+      "layout": "center",
+      "image": "/uploads/hero-amepp.jpg",
+      "kicker": "AMEPP",
+      "title": "Asociación Mexicana de Psicólogos y Psicólogas, A.C.",
+      "text": "\"Por el desarrollo integral del ser humano y la trascendencia social de la psicología\"",
+      "buttons": [
+        {
+          "label": "Afiliate",
+          "href": "/afiliate/",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "_template": "about",
+      "image": "/uploads/logo-amepp.png",
+      "title": "¿Quiénes somos?",
+      "text": "Una organización de psicólogas y psicólogos, en la que participar las y los estudiantes de psicología, y que se caracteriza por ser: democrática, incluyente, científica, creativa e innovadora, eficiente, eficaz, crítica, propositiva, solidaria, promotora y defensora de los derechos humanos, representativa nacionalmente y con una amplia red de relaciones estratégicas.",
+      "showSocial": false
+    },
+    {
+      "_template": "benefits",
+      "title": "Beneficios de Afiliación a la AMEPP",
+      "items": [
+        {
+          "strong": "Participación en Asambleas Nacionales",
+          "text": "que te permitirán informarte y opinar sobre diversos temas relacionados con la profesión."
+        },
+        {
+          "strong": "Recepción mensual y gratuita del Boletín electrónico",
+          "text": "\"La Profesión de las y los Psicólogos\"."
+        },
+        {
+          "strong": "Participación activa en los grupos nacionales de trabajo",
+          "text": ". Por sectores poblacionales y por temas sociales."
+        },
+        {
+          "strong": "Participación y acreditación para certificación profesional",
+          "text": "en el Programa Nacional de Actualización Continua en Psicología anual y gratuito."
+        },
+        {
+          "strong": "Participación en el Programa Nacional para la Promoción",
+          "text": "de la Generación de Empleo y Autoempleo para las y los Psicólogos en México 2021 - 2024 sin costo."
+        },
+        {
+          "strong": "Participación",
+          "text": "sin costo en los Diálogos Psicosociales."
+        },
+        {
+          "strong": "Descuento en los costos de los procesos de",
+          "text": "certificación y recertificación profesional en Psicología"
+        },
+        {
+          "strong": "Becas y descuentos para diversos eventos",
+          "text": "de actualización continua en Psicología especializados organizados por AMEPP."
+        },
+        {
+          "strong": "Descuentos para diversos eventos de actualización continua",
+          "text": "en Psicología realizados por organizaciones nacionales e internacionales con las que se tengan convenios de colaboración."
+        },
+        {
+          "strong": "Participación en diversos medios",
+          "text": "de comunicación social."
+        },
+        {
+          "strong": "Obtención gratuita de información y asesoría.",
+          "text": "sobre legislación profesional y ética profesional."
+        },
+        {
+          "strong": "Participación pertinente en programas alternativos",
+          "text": "del servicio social profesional obligatorio."
+        },
+        {
+          "strong": "Validación académico - profesional",
+          "text": "de tus eventos educativos."
+        },
+        {
+          "strong": "Obtención gratuita de asesoría y apoyo",
+          "text": "para el desarrollo de tus proyectos profesionales."
+        },
+        {
+          "strong": "Participación activa en la construcción de propuestas disciplinarias y multidisciplinarias",
+          "text": "para políticas públicas, programas y acciones de gobierno a nivel federal, estatal y municipal."
+        },
+        {
+          "strong": "Participación activa en la construcción de propuestas disciplinarias y multidisciplinarias",
+          "text": "para la legislación a nivel federal y de las entidades."
+        },
+        {
+          "strong": "Acceder a la información del Observatorio Nacional de Psicología y Sociedad",
+          "text": "para apoyar tu trabajo académico y/o profesional."
+        }
+      ]
+    },
+    {
+      "_template": "quote",
+      "imageSide": "right",
+      "image": "/uploads/gandhi.jpg",
+      "author": "- Mahatma Gandhi-",
+      "text": "\"“Dicen que soy un héroe, yo, pequeño, débil, tímido, casi cobarde; si a pesar de ser lo que soy, pude hacer lo que hice, que no podrían hacer ustedes juntos”\"",
+      "tone": "coral"
+    },
+    {
+      "_template": "programs",
+      "title": "PROGRAMAS NACIONALES",
+      "items": [
+        {
+          "icon": "graduate",
+          "strong": "Actualización Profesional en Psicología 2023",
+          "text": "",
+          "href": "https://drive.google.com/file/d/1eypSo-vUcg8atv3MZwkqErf_c61ks_S5/view?usp=share_link"
+        },
+        {
+          "icon": "user",
+          "strong": "Educación Continua para Psicólogas y Psicólogos 2023",
+          "text": "",
+          "href": "https://drive.google.com/file/d/11SAiM-RD462q9e0hGZCDRM3zX2DSsGpt/view?usp=sharing"
+        },
+        {
+          "icon": "certificate",
+          "strong": "Certificación Nacional en Ética",
+          "text": "Profesional en Psicología",
+          "href": ""
+        }
+      ]
+    },
+    {
+      "_template": "quote",
+      "imageSide": "left",
+      "image": "/uploads/ignacio-martin-baro.webp",
+      "author": "- Psic. Ignacio Martín-Baro",
+      "text": "\"“Por ello, yo les invito a todos ustedes, en palabras de García Márquez, a optar por una nueva y arrasadora utopía de la vida, donde nadie pueda decidir por otros hasta la forma de morir, donde deveras sea cierto el amor y sea posible la felicidad y donde las estirpes condenadas a cien años de soledad tengan por fin y para siempre una segunda oportunidad sobre la tierra”\"",
+      "tone": "red"
+    },
+    {
+      "_template": "contact",
+      "background": "white"
+    }
+  ]
+}

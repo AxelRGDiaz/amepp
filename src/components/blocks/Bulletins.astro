@@ -1,0 +1,42 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import Icon from "../Icon.astro";
+import type { Bulletin } from "../../lib/content";
+import type { PageBlocksBulletins } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksBulletins; bulletins: Bulletin[] }
+const { block, bulletins } = Astro.props;
+const items = bulletins.filter((b) => b.year === block.year);
+const half = items.length > 6 ? Math.ceil(items.length / 2) : items.length;
+const columns = [items.slice(0, half), items.slice(half)].filter((c) => c.length);
+const label = (n: number) => `No. ${String(n).padStart(2, "0")}`;
+---
+<section class={`bulletins bulletins--cover-${block.coverSide ?? "right"}`}>
+  <div class="container bulletins__grid">
+    <div class="bulletins__content">
+      <h2 class="bulletins__year" data-tina-field={tinaField(block, "year")}>{block.year}</h2>
+      {block.subtitle && <p class="bulletins__subtitle" data-tina-field={tinaField(block, "subtitle")}>{block.subtitle}</p>}
+      <div class="bulletins__columns">
+        {columns.map((column) => (
+          <ul class="icon-list bulletins__list">
+            {column.map((b) => (
+              <li>
+                <a href={b.href ?? "#"} target="_blank" rel="noopener">
+                  <Icon name="arrow" class="icon-list__icon" />
+                  <span class="icon-list__text">{label(b.number)} {b.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
+    </div>
+    {block.cover && (
+      <div class="bulletins__cover" data-tina-field={tinaField(block, "cover")}>
+        {block.coverHref
+          ? <a href={block.coverHref} target="_blank" rel="noopener"><img src={block.cover} alt={`Boletín ${block.year}`} loading="lazy" /></a>
+          : <img src={block.cover} alt={`Boletín ${block.year}`} loading="lazy" />}
+      </div>
+    )}
+  </div>
+</section>

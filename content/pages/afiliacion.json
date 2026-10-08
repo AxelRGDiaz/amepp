@@ -1,0 +1,169 @@
+{
+  "title": "Afiliación",
+  "description": "Programa de membresía de la AMEPP: beneficios, requisitos y proceso de registro.",
+  "theme": "dark",
+  "blocks": [
+    {
+      "_template": "hero",
+      "layout": "left",
+      "image": "/uploads/afiliacion-2.jpg",
+      "title": "Bienvenido a nuestro programa de membresía",
+      "text": "Únete a nuestra comunidad exclusiva y disfruta de una gran variedad de beneficios y oportunidades.",
+      "buttons": [
+        {
+          "label": "Regístrate ahora",
+          "href": "/afiliate/",
+          "style": "primary"
+        },
+        {
+          "label": "Más información",
+          "href": "#quienes-somos",
+          "style": "outline"
+        }
+      ]
+    },
+    {
+      "_template": "cards",
+      "anchor": "quienes-somos",
+      "title": "¿Quiénes somos?",
+      "numbered": false,
+      "boxed": true,
+      "items": [
+        {
+          "title": "Nuestra Misión",
+          "text": "Conectar a personas con intereses afines y brindar experiencias únicas que fomenten el crecimiento personal y profesional."
+        },
+        {
+          "title": "Nuestros Valores",
+          "text": "Inclusión, innovación, excelencia y una pasión por lo que hacemos."
+        },
+        {
+          "title": "Nuestro Equipo",
+          "text": "Un grupo apasionado y dedicado que trabaja incansablemente para hacer realidad nuestro objetivo."
+        }
+      ]
+    },
+    {
+      "_template": "cards",
+      "title": "Beneficios de ser miembro",
+      "numbered": true,
+      "boxed": false,
+      "items": [
+        {
+          "title": "Acceso Exclusivo",
+          "text": "A eventos, talleres y recursos diseñados específicamente para nuestros miembros."
+        },
+        {
+          "title": "Networking Valioso",
+          "text": "Oportunidades para conectar con otros miembros y expandir tu red profesional."
+        },
+        {
+          "title": "Descuentos Increíbles",
+          "text": "En productos y servicios de nuestros socios estratégicos."
+        },
+        {
+          "title": "Apoyo Personalizado",
+          "text": "Un equipo dedicado a tu éxito y crecimiento dentro de la comunidad."
+        }
+      ]
+    },
+    {
+      "_template": "cards",
+      "title": "Requisitos de membresía",
+      "numbered": false,
+      "boxed": false,
+      "image": "/uploads/afiliacion-1.jpg",
+      "items": [
+        {
+          "title": "Perfil Profesional",
+          "text": "Ser un profesional con experiencia en tu campo de trabajo."
+        },
+        {
+          "title": "Recomendaciones",
+          "text": "Presentar al menos 2 cartas de recomendación de miembros actuales."
+        },
+        {
+          "title": "Cuota Anual",
+          "text": "Una tarifa de membresía que cubre los beneficios y servicios."
+        },
+        {
+          "title": "Aprobación",
+          "text": "Tu solicitud será revisada y aprobada por nuestro comité de admisiones."
+        }
+      ]
+    },
+    {
+      "_template": "cards",
+      "title": "Proceso de registro",
+      "numbered": true,
+      "boxed": false,
+      "items": [
+        {
+          "title": "Completar Solicitud",
+          "text": "Llena nuestro formulario en línea con tus datos personales y profesionales."
+        },
+        {
+          "title": "Enviar Documentos",
+          "text": "Adjunta tu CV, cartas de recomendación y cualquier otro documento requerido."
+        },
+        {
+          "title": "Revisión y Aprobación",
+          "text": "Tu solicitud será revisada por nuestro comité y recibirás una respuesta en 2-3 semanas."
+        }
+      ]
+    },
+    {
+      "_template": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Cuál es el costo de la membresía?",
+          "answer": "La cuota anual de membresía es de $199 USD. Este monto cubre todos los beneficios y servicios exclusivos para nuestros miembros."
+        },
+        {
+          "question": "¿Cómo puedo cancelar mi membresía?",
+          "answer": "Puedes cancelar tu membresía en cualquier momento con un aviso previo de 30 días. Se reembolsará la parte proporcional de la cuota anual."
+        },
+        {
+          "question": "¿Qué pasa si no me aprueban?",
+          "answer": "Si tu solicitud no es aprobada, puedes volver a aplicar en 6 meses. Nuestro comité revisará tu perfil y te proporcionará retroalimentación sobre áreas de mejora."
+        }
+      ]
+    },
+    {
+      "_template": "cards",
+      "title": "Testimonios de nuestros miembros",
+      "numbered": false,
+      "boxed": false,
+      "items": [
+        {
+          "title": "Conexiones Valiosas",
+          "text": "\"Gracias a esta membresía, he podido expandir mi red y forjar alianzas estratégicas.\""
+        },
+        {
+          "title": "Oportunidades de Crecimiento",
+          "text": "\"Los eventos y talleres me han ayudado a desarrollar habilidades clave para mi carrera.\""
+        },
+        {
+          "title": "Beneficios Exclusivos",
+          "text": "\"Los descuentos en servicios y productos han sido un gran valor agregado a mi membresía.\""
+        },
+        {
+          "title": "Apoyo Personalizado",
+          "text": "\"El equipo siempre está disponible para brindarme orientación y apoyo cuando lo necesito.\""
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "kicker": "¡Regístrate ahora!",
+      "title": "Solicitar Membresía",
+      "text": "¡No pierdas la oportunidad de formar parte de nuestra comunidad exclusiva! Completa el proceso de registro y accede a una gran variedad de beneficios.",
+      "button": {
+        "label": "Solicitar membresía",
+        "href": "/afiliate/"
+      },
+      "image": "/uploads/afiliacion-fondo.png"
+    }
+  ]
+}

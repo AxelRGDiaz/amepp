@@ -1,0 +1,20 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksQuote } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksQuote }
+const { block } = Astro.props;
+---
+<section class={`quote quote--${block.tone ?? "coral"} quote--image-${block.imageSide ?? "right"}`}>
+  <div class="quote__grid">
+    <blockquote class="quote__text">
+      <p data-tina-field={tinaField(block, "text")}><i>{block.text}</i></p>
+      {block.author && <footer data-tina-field={tinaField(block, "author")}><b>{block.author}</b></footer>}
+    </blockquote>
+    {block.image && (
+      <div class="quote__media">
+        <img src={block.image} alt="" loading="lazy" data-tina-field={tinaField(block, "image")} />
+      </div>
+    )}
+  </div>
+</section>

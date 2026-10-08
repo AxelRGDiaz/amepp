@@ -1,0 +1,53 @@
+{
+  "siteName": "AMEPP",
+  "logo": "/uploads/logo-amepp.png",
+  "nav": [
+    {
+      "label": "Inicio",
+      "href": "/"
+    },
+    {
+      "label": "Nosotros Somos",
+      "href": "/nosotros-somos/"
+    },
+    {
+      "label": "Publicaciones",
+      "href": "/publicaciones/"
+    },
+    {
+      "label": "Videos",
+      "href": "https://www.youtube.com/@amepptv"
+    }
+  ],
+  "showSearch": true,
+  "contact": {
+    "title": "Contacto",
+    "city": "Guadalajara, Mexico",
+    "phone": "33 3667 4655",
+    "email": "amepsi2022@gmail.com",
+    "mapAddress": "Montes Apeninos 973, Guadalajara, Mexico"
+  },
+  "social": [
+    {
+      "network": "facebook",
+      "url": ""
+    },
+    {
+      "network": "twitter",
+      "url": ""
+    },
+    {
+      "network": "instagram",
+      "url": ""
+    },
+    {
+      "network": "youtube",
+      "url": "https://www.youtube.com/@amepptv"
+    },
+    {
+      "network": "linkedin",
+      "url": ""
+    }
+  ],
+  "footer": "© {year} AMEPP"
+}

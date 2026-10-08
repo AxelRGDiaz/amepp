@@ -1,0 +1,20 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksPubHero } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksPubHero }
+const { block } = Astro.props;
+---
+<section class="pub-hero">
+  <div class="container pub-hero__grid">
+    <div class="pub-hero__content">
+      <h1 class="pub-hero__title" data-tina-field={tinaField(block, "title")}>{block.title}</h1>
+      {block.subtitle && <p class="pub-hero__subtitle" data-tina-field={tinaField(block, "subtitle")}>{block.subtitle}</p>}
+      {block.badge && <img class="pub-hero__badge" src={block.badge} alt="" data-tina-field={tinaField(block, "badge")} />}
+    </div>
+    <div class="pub-hero__media">
+      {block.backdrop && <img class="pub-hero__backdrop" src={block.backdrop} alt="" data-tina-field={tinaField(block, "backdrop")} />}
+      {block.image && <img class="pub-hero__image" src={block.image} alt="" data-tina-field={tinaField(block, "image")} />}
+    </div>
+  </div>
+</section>

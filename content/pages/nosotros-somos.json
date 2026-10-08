@@ -1,0 +1,281 @@
+{
+  "title": "Nosotros Somos",
+  "description": "Conoce a la AMEPP: Comité Ejecutivo Nacional, coordinaciones estatales, objetivos y membresías.",
+  "theme": "gray",
+  "blocks": [
+    {
+      "_template": "about",
+      "image": "/uploads/logo-amepp.png",
+      "title": "¿Quiénes somos?",
+      "text": "Una organización de psicólogas y psicólogos, en la que participar las y los estudiantes de psicología, y que se caracteriza por ser: democrática, incluyente, científica, creativa e innovadora, eficiente, eficaz, crítica, propositiva, solidaria, promotora y defensora de los derechos humanos, representativa nacionalmente y con una amplia red de relaciones estratégicas.",
+      "showSocial": true
+    },
+    {
+      "_template": "people",
+      "layout": "center",
+      "title": "COMITE EJECUTIVO NACIONAL",
+      "divider": false,
+      "people": [
+        {
+          "name": "Psic. José de Jesús Gutiérrez Rodríguez",
+          "role": "Presidente CEN"
+        },
+        {
+          "name": "Psic. Ariadna Teresita Sanroman Herrejón",
+          "role": "Vicepresidenta"
+        },
+        {
+          "name": "Psic. Karla Paulette Aramburo Amaya",
+          "role": "Secretaria General"
+        },
+        {
+          "name": "Psic. Luz Erika Bayardo Núñez",
+          "role": "Subsecretaria General"
+        }
+      ]
+    },
+    {
+      "_template": "people",
+      "layout": "columns",
+      "divider": true,
+      "people": [
+        {
+          "name": "Dr. Oscar Daniel Ramírez Plascencia",
+          "role": "Secretario de Investigación"
+        },
+        {
+          "name": "Psic. Christian Alejandro Monje Espinosa",
+          "role": "Subsecretario de Investigación"
+        },
+        {
+          "name": "Mtra. Diana Rebeca Sifuentes Martínez",
+          "role": "Secretaria de Calidad Profesional"
+        },
+        {
+          "name": "Mtra. María Purificación Gómez García",
+          "role": "Secretaria de Promoción de Generación de Empleo"
+        },
+        {
+          "name": "Mtra. Perla del Carmen Galindo Ramírez",
+          "role": "Subsecretaria de Promoción de Generación de Empleo"
+        },
+        {
+          "name": "Mtro. José Andrés Guerrero González",
+          "role": "Secretaría de Comunicación Social"
+        },
+        {
+          "name": "Gerardo Cobián Pérez Bocanegra",
+          "role": "Subsecretario de Comunicación Social"
+        },
+        {
+          "name": "Mtro. Ángel Pimentel Pinedo",
+          "role": "Secretario de Relaciones Legislativas Federales"
+        },
+        {
+          "name": "Mtra. Sandra Cienfuegos Torres",
+          "role": "Secretaria de Relaciones Empresariales Nacionales"
+        },
+        {
+          "name": "Dra. Georgina Lizarraga Salazar",
+          "role": "Secretaria de Relaciones con Universidades e Instituciones de Educación Superior en México"
+        },
+        {
+          "name": "Hernán Medina Rivera",
+          "role": "Secretario de Asuntos Estudiantiles"
+        },
+        {
+          "name": "Daniel Alejandro Flores Lizarraga",
+          "role": "Subsecretario de Asuntos Estudiantiles"
+        }
+      ],
+      "peopleRight": [
+        {
+          "name": "Dra. Elizabeth Blas Soto",
+          "role": "Coordinadora General del Estado de Durango"
+        },
+        {
+          "name": "Dr. Santos Noé Herrera Mijangos",
+          "role": "Coordinador General del Estado de Hidalgo"
+        },
+        {
+          "name": "Dra. Dayana Luna Reyes",
+          "role": "Subcoordinadora General del Estado de Hidalgo"
+        },
+        {
+          "name": "Psic. María del Carmen de la Salud de la Cruz Cortinas",
+          "role": "Coordinadora General del Estado de Jalisco"
+        },
+        {
+          "name": "Psic. Karla Adriana Cruz Vera",
+          "role": "Subcoordinadora General del Estado de Jalisco"
+        },
+        {
+          "name": "Psic. Evelyn Yadira Delgadillo Obledo",
+          "role": "Coordinadora de Investigación"
+        },
+        {
+          "name": "Psic. María de Jesús Dueñas Espinoza",
+          "role": "Coordinadora de Relaciones con Instituciones Gubernamentales"
+        },
+        {
+          "name": "Psic. Ariadna Teresita Sanroman Herrejón",
+          "role": "Coordinadora General del Estado de Michoacán"
+        },
+        {
+          "name": "Dr. E. Bernardino García Briseño",
+          "role": "Coordinador General del Estado de Morelos"
+        },
+        {
+          "name": "Mtro. José Luis Castellanos Guevara",
+          "role": "Coordinador General del Estado de Quintana Roo"
+        },
+        {
+          "name": "Dra. Georgina Lizarraga Salazar",
+          "role": "Coordinadora General del Estado de Sinaloa"
+        },
+        {
+          "name": "Psic. Miroslava González Pomares",
+          "role": "Coordinación General del Estado de Tamaulipas:"
+        },
+        {
+          "name": "Psic. Sonia Patricia Martínez Guerrero",
+          "role": "Subcoordinadora General del Estado de Tamaulipas"
+        }
+      ]
+    },
+    {
+      "_template": "people",
+      "layout": "list",
+      "divider": false,
+      "people": [
+        {
+          "name": "Psic. Karla Adriana Cruz Vera",
+          "role": "Coordinadora General del Grupo Nacional de Trabajo Psicología y Niñas y Niños"
+        },
+        {
+          "name": "Mtra. Diana Esmeralda Colima Mauricio",
+          "role": "Coordinadora General del Grupo Nacional de Trabajo Psicología y Adolescentes"
+        },
+        {
+          "name": "Dra. Saraí Pando Amezcua",
+          "role": "Coordinadora General del Grupo Nacional de Trabajo Psicología y Género"
+        },
+        {
+          "name": "Psic. José de Jesús Gutiérrez Rodríguez",
+          "role": "Coordinador General del Grupo Nacional de Trabajo Psicología y Personas Adultas Mayores"
+        },
+        {
+          "name": "Psic. Martín de Jesús Cortés Becerra",
+          "role": "Coordinador General del Grupo Nacional de Trabajo Psicología y Personas con Discapacidad"
+        },
+        {
+          "name": "Mtro. Ángel Pimentel Pinedo",
+          "role": "Coordinador General del Grupo Nacional de Trabajo Psicología y Personas con Identidades LGBTI+"
+        },
+        {
+          "name": "Mtra. Dulce María Peraza Llovera",
+          "role": "Coordinadora General del Grupo Nacional de Trabajo Psicología y Salud"
+        },
+        {
+          "name": "Mtro. Francisco José Gutiérrez Rodríguez",
+          "role": "Coordinador General del Grupo Nacional de Trabajo Psicología y Seguridad Ciudadana"
+        },
+        {
+          "name": "Mtra. Norma Elizabeth Mora Rosas",
+          "role": "Coordinadora General del Grupo Nacional de Trabajo Psicología y Deporte"
+        }
+      ]
+    },
+    {
+      "_template": "headline",
+      "text": "El inicio de Nuestra Historia",
+      "href": ""
+    },
+    {
+      "_template": "objectives",
+      "title": "Nuestros Objetivos",
+      "items": [
+        {
+          "text": "Promover prácticas profesionales de calidad, éticas, incluyentes y legales de las y los psicólogos mexicanos.",
+          "dark": true
+        },
+        {
+          "text": "Implementar programas educativos para capacitar, especializar y actualizar continuamente a las y los psicólogos mexicanos.",
+          "dark": false
+        },
+        {
+          "text": "Fomentar y operar procesos de certificación profesional de las y los psicólogos mexicanos.",
+          "dark": false
+        },
+        {
+          "text": "Promover la generación y operación de servicios psicológicos públicos federales, estatales y municipales suficientes, de calidad, éticos e incluyentes para las y los mexicanos.",
+          "dark": false
+        },
+        {
+          "text": "Promover la generación de empleos y autoempleos dignos y bien pagados para las y los psicólogos mexicanos",
+          "dark": true
+        },
+        {
+          "text": "Promover, generar, difundir y divulgar investigaciones psicológicas científicas, clínicas, sociales y epidemiológicas.",
+          "dark": false
+        }
+      ]
+    },
+    {
+      "_template": "pricing",
+      "title": "Membresias",
+      "plans": [
+        {
+          "name": "Socio Titular",
+          "price": "$400",
+          "subtitle": "Beneficios",
+          "text": "Lorem ipsum dolor sit amet, te has solet postea. Voluptua quaestio dissentias has ex, no eum aliquid tibique petentium, agam",
+          "button": {
+            "label": "Afiliate",
+            "href": "/afiliate/"
+          },
+          "dark": false
+        },
+        {
+          "name": "Socio Estudiantil",
+          "price": "$300",
+          "subtitle": "10 enterance card / 30$ Per Class",
+          "text": "Lorem ipsum dolor sit amet, te has solet postea. Voluptua quaestio dissentias has ex, no eum aliquid tibique petentium, agam",
+          "button": {
+            "label": "Afiliate",
+            "href": "/afiliate/"
+          },
+          "dark": true
+        }
+      ]
+    },
+    {
+      "_template": "programs",
+      "title": "PROGRAMAS NACIONALES",
+      "items": [
+        {
+          "icon": "graduate",
+          "strong": "Actualización Profesional en Psicología 2023",
+          "text": "",
+          "href": "https://drive.google.com/file/d/1eypSo-vUcg8atv3MZwkqErf_c61ks_S5/view?usp=share_link"
+        },
+        {
+          "icon": "user",
+          "strong": "Educación Continua para Psicólogas y Psicólogos 2023",
+          "text": "",
+          "href": "https://drive.google.com/file/d/11SAiM-RD462q9e0hGZCDRM3zX2DSsGpt/view?usp=sharing"
+        },
+        {
+          "icon": "certificate",
+          "strong": "Certificación Nacional en Ética",
+          "text": "Profesional en Psicología",
+          "href": ""
+        }
+      ]
+    },
+    {
+      "_template": "contact",
+      "background": "red"
+    }
+  ]
+}

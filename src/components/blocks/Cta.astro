@@ -1,0 +1,17 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksCta } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksCta }
+const { block } = Astro.props;
+---
+<section class="cta" style={block.image ? `background-image: url('${block.image}')` : undefined}>
+  <div class="container cards__frame cta__inner">
+    {block.kicker && <p class="cta__kicker" data-tina-field={tinaField(block, "kicker")}>{block.kicker}</p>}
+    {block.title && <h2 class="cards__title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+    {block.text && <p class="cta__text" data-tina-field={tinaField(block, "text")}>{block.text}</p>}
+    {block.button?.label && (
+      <a class="btn btn--primary" href={block.button.href ?? "#"} data-tina-field={tinaField(block, "button")}>{block.button.label}</a>
+    )}
+  </div>
+</section>

@@ -1,0 +1,48 @@
+---
+import type { Bulletin, Global, Page } from "../lib/content";
+import About from "./blocks/About.astro";
+import Banner from "./blocks/Banner.astro";
+import Benefits from "./blocks/Benefits.astro";
+import Bulletins from "./blocks/Bulletins.astro";
+import Cards from "./blocks/Cards.astro";
+import Contact from "./blocks/Contact.astro";
+import Cta from "./blocks/Cta.astro";
+import Faq from "./blocks/Faq.astro";
+import Headline from "./blocks/Headline.astro";
+import Hero from "./blocks/Hero.astro";
+import Objectives from "./blocks/Objectives.astro";
+import People from "./blocks/People.astro";
+import Pricing from "./blocks/Pricing.astro";
+import Programs from "./blocks/Programs.astro";
+import PubHero from "./blocks/PubHero.astro";
+import Quote from "./blocks/Quote.astro";
+import Timeline from "./blocks/Timeline.astro";
+
+interface Props { page: Page; global: Global; bulletins: Bulletin[] }
+const { page, global, bulletins } = Astro.props;
+
+const components: Record<string, any> = {
+  PageBlocksHero: Hero,
+  PageBlocksAbout: About,
+  PageBlocksBenefits: Benefits,
+  PageBlocksQuote: Quote,
+  PageBlocksPrograms: Programs,
+  PageBlocksContact: Contact,
+  PageBlocksPeople: People,
+  PageBlocksHeadline: Headline,
+  PageBlocksObjectives: Objectives,
+  PageBlocksPricing: Pricing,
+  PageBlocksPubHero: PubHero,
+  PageBlocksBanner: Banner,
+  PageBlocksBulletins: Bulletins,
+  PageBlocksTimeline: Timeline,
+  PageBlocksCards: Cards,
+  PageBlocksFaq: Faq,
+  PageBlocksCta: Cta,
+};
+---
+<span id="contenido"></span>
+{page.blocks?.map((block) => {
+  const Component = block && components[block.__typename];
+  return Component ? <Component block={block} global={global} bulletins={bulletins} /> : null;
+})}

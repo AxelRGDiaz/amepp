@@ -1,0 +1,12 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksHeadline } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksHeadline }
+const { block } = Astro.props;
+---
+<section class="headline">
+  <h2 class="headline__text" data-tina-field={tinaField(block, "text")}>
+    {block.href ? <a href={block.href}>{block.text}</a> : block.text}
+  </h2>
+</section>

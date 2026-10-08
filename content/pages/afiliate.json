@@ -1,0 +1,60 @@
+{
+  "title": "Afíliate",
+  "description": "Programa de membresías de la AMEPP: proceso de registro paso a paso.",
+  "theme": "white",
+  "blocks": [
+    {
+      "_template": "hero",
+      "layout": "split",
+      "image": "/uploads/hero-amepp.jpg",
+      "title": "Bienvenidos a nuestro programa de membresias",
+      "text": "¡Afíliate ya y sé parte de la comunidad de psicólogos y psicólogas en México! ¡Haz clic aquí para unirte ahora!",
+      "buttons": []
+    },
+    {
+      "_template": "timeline",
+      "title": "Proceso de Registro",
+      "steps": [
+        {
+          "kicker": "AMEPP",
+          "title": "Completa tu solicitud",
+          "text": "Llena tu solicitud con tus datos personales y profesionales.",
+          "href": "https://docs.google.com/document/d/1yulosDxPRZhFYX3_bPn6LGUEQP9q7bSX/edit?usp=sharing&ouid=110597894278722615275&rtpof=true&sd=true",
+          "icon": "document"
+        },
+        {
+          "kicker": "AMEPP",
+          "title": "Enviar Documento",
+          "text": "Adjuntas solicitud, CV, y los documentos requeridos.",
+          "href": "",
+          "icon": "trophy"
+        },
+        {
+          "kicker": "AMEPP",
+          "title": "Revisión y Aprobación",
+          "text": "Tu solicitud será revisada por el CEN",
+          "href": "",
+          "icon": "trophy"
+        },
+        {
+          "kicker": "AMEPP",
+          "title": "Cubre tu aportación",
+          "text": "Una vez aprobada tu solicitud, cubre la aportación en efectivo o con QR o retiro.",
+          "href": "",
+          "icon": "trophy"
+        },
+        {
+          "kicker": "AMEPP",
+          "title": "Recibe tu membresia",
+          "text": "Una vez aprobada tu solicitud, cubre la aportación en efectivo o con QR o retiro.",
+          "href": "",
+          "icon": "trophy"
+        }
+      ]
+    },
+    {
+      "_template": "contact",
+      "background": "white"
+    }
+  ]
+}

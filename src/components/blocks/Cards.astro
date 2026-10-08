@@ -1,0 +1,24 @@
+---
+import { tinaField } from "@tinacms/astro/tina-field";
+import type { PageBlocksCards } from "../../../tina/__generated__/types";
+
+interface Props { block: PageBlocksCards }
+const { block } = Astro.props;
+---
+<section class:list={["cards", { "cards--boxed": block.boxed, "cards--with-image": block.image }]} id={block.anchor || undefined}>
+  <div class="container cards__frame">
+    <div class="cards__body">
+      {block.title && <h2 class="cards__title" data-tina-field={tinaField(block, "title")}>{block.title}</h2>}
+      <div class="cards__grid">
+        {block.items?.map((item, i) => item && (
+          <div class="cards__item" data-tina-field={tinaField(item)}>
+            {block.numbered && <span class="cards__number">{i + 1}</span>}
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    {block.image && <img class="cards__image" src={block.image} alt="" loading="lazy" data-tina-field={tinaField(block, "image")} />}
+  </div>
+</section>
